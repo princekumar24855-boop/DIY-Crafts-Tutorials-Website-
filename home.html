@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DIY Crafts & Tutorials</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #fafafa;
+        }
+
+        header {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .hero {
+            background: #ffdeb3;
+            padding: 60px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .tutorial-box {
+            text-align: left;
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #bbb;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function goTo(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>DIY Crafts & Tutorials</h1>
+    <nav>
+        <a href="#" onclick="goTo('home')">Home</a>
+        <a href="#" onclick="goTo('categories')">Categories</a>
+        <a href="#" onclick="goTo('tutorials')">Tutorials</a>
+        <a href="#" onclick="goTo('about')">About</a>
+        <a href="#" onclick="goTo('contact')">Contact</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Create. Craft. Inspire.</h2>
+    <p>Learn beautiful DIY craft projects with easy step-by-step tutorials.</p>
+</section>
+
+<section id="categories">
+    <h2>Craft Categories</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Paper Crafts</h3>
+            <p>Flowers, Origami & Decorations</p>
+        </div>
+        <div class="card">
+            <h3>Recycled Crafts</h3>
+            <p>Creative ideas using waste items</p>
+        </div>
+        <div class="card">
+            <h3>Home Decor</h3>
+            <p>Wall art, lamps & designs</p>
+        </div>
+    </div>
+</section>
+
+<section id="tutorials">
+    <h2>DIY Tutorials</h2>
+
+    <div class="tutorial-box">
+        <h3>1. Paper Flower Making</h3>
+        <p>
+            ✔ Step 1: Cut colored papers in petal shape.<br>
+            ✔ Step 2: Fold and curl edges.<br>
+            ✔ Step 3: Arrange petals in layers.<br>
+            ✔ Step 4: Glue together to form a flower.
+        </p>
+
+        <hr>
+
+        <h3>2. Wall Hanging With Waste CDs</h3>
+        <p>
+            ✔ Step 1: Paint or decorate old CDs.<br>
+            ✔ Step 2: Attach threads using glue.<br>
+            ✔ Step 3: Add beads for a stylish look.<br>
+            ✔ Step 4: Hang on wall.
+        </p>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        DIY Crafts & Tutorials helps everyone learn creative skills through
+        easy and fun step-by-step craft projects.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <br>
+        <button>Send Message</button>
+    </form>
+</section>
+
+</body>
+</html>
